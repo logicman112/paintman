@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옥상방수 탄성코트 전문 - 서울 인천 경기 페인트맨114</title>
+    <meta name="description" content="서울 인천 경기 옥상방수 탄성코트 외벽방수 우레탄방수 전문. 누수해결 방수시공 당일견적. 페인트맨114가 책임지고 해결합니다.">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNiIgZmlsbD0iI2U1NTMwMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTUlIiBmb250LXNpemU9IjE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCI+8J+OgTwvdGV4dD48L3N2Zz4=" type="image/svg+xml">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;background:#fafaf8;color:#1a1a1a;overflow-x:hidden}
+
+        /* 모바일 하단 고정 */
+        .mob-cta{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:linear-gradient(135deg,#e55300,#bf4500);padding:13px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 -4px 20px rgba(229,83,0,.35)}
+        .mob-cta .txt strong{color:#fff;font-size:.9em;display:block;font-weight:900}
+        .mob-cta .txt span{color:rgba(255,255,255,.8);font-size:.76em}
+        .mob-cta a{background:#fff;color:#e55300;padding:11px 22px;border-radius:50px;font-weight:900;font-size:.98em;text-decoration:none;white-space:nowrap}
+        .mb-pad{height:62px}
+
+        /* 상단바 */
+        .top-bar{background:#1a1a1a;padding:9px 20px;text-align:center;font-size:.82em;color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+        .top-bar a{color:#fbbf24;font-weight:700;text-decoration:none}
+
+        /* 헤더 */
+        header{background:#fff;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.07);border-bottom:3px solid #e55300}
+        .logo{font-size:1.2em;font-weight:900;color:#1a1a1a;display:flex;align-items:center;gap:8px;line-height:1.2}
+        .logo .brand{color:#e55300}
+        .logo .sub{font-size:.6em;color:#888;font-weight:400;display:block}
+        .hd-call{background:#e55300;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.9em;transition:background .2s}
+        .hd-call:hover{background:#bf4500}
+
+        /* 히어로 */
+        .hero{min-height:100vh;background:linear-gradient(160deg,#1a1a1a 0%,#2d2010 40%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center;padding:100px 20px 80px;position:relative;overflow:hidden;text-align:center}
+        .hero::before{content:'';position:absolute;top:-20%;left:-20%;width:700px;height:700px;background:radial-gradient(circle,rgba(229,83,0,.12),transparent 65%);border-radius:50%}
+        .hero::after{content:'';position:absolute;bottom:-20%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,rgba(251,191,36,.06),transparent 65%);border-radius:50%}
+
+        /* 비오는 효과 */
+        .rain{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+        .drop{position:absolute;width:2px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.15));animation:fall linear infinite;border-radius:2px}
+        @keyframes fall{0%{transform:translateY(-100px);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(110vh);opacity:0}}
+
+        .hero-inner{position:relative;z-index:1;max-width:860px}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(229,83,0,.2);border:1px solid rgba(229,83,0,.4);color:#fb923c;padding:8px 20px;border-radius:50px;font-size:.82em;font-weight:700;letter-spacing:1px;margin-bottom:30px}
+        .hero-badge .dot{width:7px;height:7px;background:#fbbf24;border-radius:50%;animation:blink 1.5s infinite}
+        @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+        .hero h1{font-size:clamp(2.2em,5.5vw,4em);font-weight:900;color:#fff;line-height:1.15;margin-bottom:20px;letter-spacing:-1px}
+        .hero h1 .orange{color:#fb923c}
+        .hero h1 .yellow{color:#fbbf24}
+        .hero-desc{font-size:clamp(1em,2.3vw,1.2em);color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:15px}
+        .hero-warn{display:inline-block;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.35);color:#fca5a5;padding:10px 24px;border-radius:8px;font-size:.92em;margin-bottom:40px}
+
+        .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:55px}
+        .btn-orange{background:linear-gradient(135deg,#e55300,#bf4500);color:#fff;padding:20px 48px;border-radius:12px;font-size:1.25em;font-weight:900;text-decoration:none;box-shadow:0 8px 30px rgba(229,83,0,.45);transition:all .2s}
+        .btn-orange:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(229,83,0,.55)}
+        .btn-ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;padding:20px 35px;border-radius:12px;font-size:1em;font-weight:700;text-decoration:none;transition:background .2s}
+        .btn-ghost:hover{background:rgba(255,255,255,.14)}
+
+        .hero-tags{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+        .htag{background:rgba(229,83,0,.15);border:1px solid rgba(229,83,0,.3);color:#fb923c;padding:6px 16px;border-radius:20px;font-size:.82em}
+
+        /* 문제 알림 */
+        .danger-sec{background:#fff;padding:55px 20px;border-bottom:1px solid #f0f0f0}
+        .danger-inner{max-width:950px;margin:0 auto;text-align:center}
+        .danger-title{font-size:1.15em;font-weight:800;color:#1a1a1a;margin-bottom:30px}
+        .danger-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+        .d-item{background:#fff7f0;border:1px solid #fed7aa;border-radius:12px;padding:22px 18px;text-align:center;transition:all .3s}
+        .d-item:hover{border-color:#e55300;transform:translateY(-3px);box-shadow:0 8px 20px rgba(229,83,0,.12)}
+        .d-icon{font-size:2.2em;margin-bottom:10px;display:block}
+        .d-item h3{font-size:.95em;font-weight:800;color:#e55300;margin-bottom:6px}
+        .d-item p{font-size:.84em;color:#666;line-height:1.6}
+
+        /* 통계 */
+        .stats{background:#e55300;padding:50px 20px}
+        .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;max-width:900px;margin:0 auto;text-align:center}
+        .stat-i{padding:20px;border-right:1px solid rgba(255,255,255,.15)}
+        .stat-i:last-child{border-right:none}
+        .stat-n{font-size:2.6em;font-weight:900;color:#fff;display:block;line-height:1}
+        .stat-l{font-size:.8em;color:rgba(255,255,255,.75);margin-top:5px}
+
+        /* 섹션 */
+        .sec{padding:80px 20px}
+        .sec-inner{max-width:1050px;margin:0 auto}
+        .sec-eyebrow{font-size:.75em;font-weight:700;color:#e55300;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:12px}
+        .sec-h{font-size:clamp(1.7em,3.5vw,2.4em);font-weight:900;color:#1a1a1a;margin-bottom:10px;letter-spacing:-0.5px}
+        .sec-h span{color:#e55300}
+        .sec-p{color:#888;font-size:.97em;line-height:1.7;margin-bottom:50px}
+
+        /* 서비스 카드 */
+        .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+        .svc-card{background:#fff;border-radius:16px;padding:32px 24px;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:all .3s;border-bottom:4px solid transparent;position:relative;overflow:hidden}
+        .svc-card::after{content:'';position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle,rgba(229,83,0,.06),transparent 70%)}
+        .svc-card:hover{transform:translateY(-5px);box-shadow:0 12px 35px rgba(229,83,0,.15);border-bottom-color:#e55300}
+        .svc-icon{font-size:2.6em;margin-bottom:16px;display:block}
+        .svc-card h3{font-size:1.05em;font-weight:800;margin-bottom:8px;color:#1a1a1a}
+        .svc-card p{font-size:.87em;color:#777;line-height:1.7}
+        .svc-badge{display:inline-block;margin-top:14px;background:#fff7f0;color:#e55300;padding:4px 12px;border-radius:12px;font-size:.75em;font-weight:700;border:1px solid #fed7aa}
+
+        /* 갤러리 */
+        .gal-sec{background:#1a1a1a;padding:80px 20px}
+        .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:240px 240px;gap:10px;max-width:1050px;margin:50px auto 0}
+        .gal-item{border-radius:10px;overflow:hidden;position:relative}
+        .gal-item.big{grid-column:1/3;grid-row:1/3}
+        .gal-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;filter:brightness(.85)}
+        .gal-item:hover img{transform:scale(1.05);filter:brightness(1)}
+        .gal-lbl{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));padding:15px 12px;font-size:.84em;font-weight:700;color:#fff;opacity:0;transition:opacity .3s}
+        .gal-item:hover .gal-lbl{opacity:1}
+
+        /* 시공 전후 */
+        .ba-sec{background:#fafaf8;padding:80px 20px}
+        .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:16px;overflow:hidden;max-width:900px;margin:50px auto 0}
+        .ba-item{position:relative;overflow:hidden}
+        .ba-item img{width:100%;height:280px;object-fit:cover;display:block;transition:transform .4s}
+        .ba-item:hover img{transform:scale(1.04)}
+        .ba-tag{position:absolute;top:16px;left:16px;padding:6px 14px;border-radius:4px;font-size:.8em;font-weight:700}
+        .ba-tag.before{background:rgba(239,68,68,.9);color:#fff}
+        .ba-tag.after{background:rgba(229,83,0,.9);color:#fff}
+        .ba-desc{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));padding:20px;color:#fff;font-size:.88em;font-weight:600}
+
+        /* 프로세스 */
+        .proc-wrap{display:flex;gap:0;max-width:950px;margin:0 auto;position:relative}
+        .proc-wrap::before{content:'';position:absolute;top:33px;left:5%;right:5%;height:2px;background:linear-gradient(90deg,#e55300,#fbbf24,#e55300)}
+        .proc-s{flex:1;text-align:center;padding:0 12px;position:relative;z-index:1}
+        .proc-c{width:66px;height:66px;background:#fff;border:2px solid #e5e7eb;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.3em;font-weight:900;color:#1a1a1a;transition:all .3s;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+        .proc-s:hover .proc-c{background:#e55300;border-color:#e55300;color:#fff;box-shadow:0 6px 20px rgba(229,83,0,.35)}
+        .proc-s h3{font-size:.93em;font-weight:800;color:#1a1a1a;margin-bottom:6px}
+        .proc-s p{font-size:.8em;color:#888;line-height:1.6}
+
+        /* 신뢰 */
+        .trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;max-width:950px;margin:0 auto}
+        .trust-card{background:#fff7f0;border:1px solid #fed7aa;border-radius:14px;padding:28px 22px;text-align:center;transition:all .3s}
+        .trust-card:hover{border-color:#e55300;transform:translateY(-3px);box-shadow:0 8px 20px rgba(229,83,0,.12)}
+        .trust-icon{font-size:2.4em;margin-bottom:12px;display:block}
+        .trust-card h3{font-size:1em;font-weight:800;color:#e55300;margin-bottom:7px}
+        .trust-card p{font-size:.85em;color:#666;line-height:1.65}
+
+        /* 지역 */
+        .area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:950px;margin:0 auto}
+        .area-card{background:#fff;border-radius:12px;padding:24px 18px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.06);transition:all .3s;border-top:3px solid transparent}
+        .area-card:hover{border-top-color:#e55300;transform:translateY(-3px)}
+        .area-card h3{font-size:1.05em;font-weight:900;color:#e55300;margin-bottom:9px}
+        .area-card p{font-size:.8em;color:#888;line-height:1.9}
+
+        /* CTA */
+        .cta-sec{background:linear-gradient(135deg,#2d2010,#1a1a1a,#2d2010);padding:85px 20px;text-align:center;position:relative;overflow:hidden}
+        .cta-sec::before{content:'🎨';position:absolute;font-size:22em;opacity:.04;top:50%;left:50%;transform:translate(-50%,-50%)}
+        .cta-inner{position:relative;z-index:1}
+        .cta-sec h2{font-size:clamp(1.8em,4vw,2.9em);font-weight:900;color:#fff;margin-bottom:15px;letter-spacing:-0.5px}
+        .cta-sec h2 span{color:#fb923c}
+        .cta-sec p{color:rgba(255,255,255,.7);margin-bottom:40px;font-size:1.05em;line-height:1.75}
+        .cta-btn{display:inline-block;background:linear-gradient(135deg,#e55300,#bf4500);color:#fff;padding:22px 60px;border-radius:12px;font-size:1.5em;font-weight:900;text-decoration:none;box-shadow:0 8px 30px rgba(229,83,0,.45);transition:transform .2s}
+        .cta-btn:hover{transform:scale(1.04)}
+
+        footer{background:#0f0f0f;padding:28px 20px;text-align:center;color:rgba(255,255,255,.28);font-size:.82em;border-top:1px solid rgba(229,83,0,.15)}
+        footer span{color:#fb923c}
+
+        @media(max-width:768px){
+            .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+            .gal-item.big{grid-column:1/3;grid-row:auto}
+            .ba-grid{grid-template-columns:1fr}
+            .proc-wrap{flex-direction:column;gap:20px}
+            .proc-wrap::before{display:none}
+            header{padding:14px 18px}
+        }
+    </style>
+</head>
+<body>
+
+<!-- 모바일 하단 고정 -->
+<div class="mob-cta">
+    <div class="txt">
+        <strong>🎨 페인트맨114 방수전문</strong>
+        <span>무료견적 · 당일상담 가능</span>
+    </div>
+    <a href="tel:0504-1362-7837">📞 무료견적</a>
+</div>
+<div class="mb-pad"></div>
+
+<!-- 상단바 -->
+<div class="top-bar">
+    <span>☔ 누수·방수 전문 페인트맨114</span>
+    <span>|</span>
+    <a href="tel:0504-1362-7837">📞 0504-1362-7837 무료견적</a>
+</div>
+
+<!-- 헤더 -->
+<header>
+    <div class="logo">
+        🎨 <div><span class="brand">페인트맨114</span><span class="sub">옥상방수 · 탄성코트 전문</span></div>
+    </div>
+    <a href="tel:0504-1362-7837" class="hd-call">📞 무료 견적 문의</a>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+    <div class="rain" id="rain"></div>
+    <div class="hero-inner">
+        <div class="hero-badge"><span class="dot"></span> 서울·인천·경기 옥상방수·탄성코트 전문</div>
+        <h1>
+            빗물이 새는 옥상<br>
+            <span class="orange">탄성코트</span>로<br>
+            <span class="yellow">완벽하게</span> 막습니다
+        </h1>
+        <p class="hero-desc">옥상방수 · 탄성코트 · 외벽방수 · 우레탄방수<br>수십 년 현장 경험의 전문가가 직접 시공합니다</p>
+        <div class="hero-warn">⚠️ 누수 방치 시 — 구조물 부식 · 곰팡이 · 전기 합선 · 아랫집 피해</div>
+        <div class="hero-btns">
+            <a href="tel:0504-1362-7837" class="btn-orange">🎨 0504-1362-7837 무료견적</a>
+            <a href="#service" class="btn-ghost">시공 안내 보기 ↓</a>
+        </div>
+        <div class="hero-tags">
+            <span class="htag">서울 전 지역</span>
+            <span class="htag">인천 전 지역</span>
+            <span class="htag">경기 전 지역</span>
+            <span class="htag">옥상방수</span>
+            <span class="htag">탄성코트</span>
+            <span class="htag">외벽방수</span>
+            <span class="htag">우레탄방수</span>
+            <span class="htag">무료견적</span>
+        </div>
+    </div>
+</section>
+
+<!-- 누수 증상 -->
+<div class="danger-sec">
+    <div class="danger-inner">
+        <div class="danger-title">☔ 이런 증상 있으신가요? — 지금 즉시 확인하세요</div>
+        <div class="danger-grid">
+            <div class="d-item"><span class="d-icon">💧</span><h3>천장에서 물이 샌다</h3><p>방수층 파손으로 옥상 빗물이 내부로 침투한 상태입니다</p></div>
+            <div class="d-item"><span class="d-icon">🟤</span><h3>천장에 얼룩·곰팡이</h3><p>누수가 반복되면서 구조물 내부까지 오염된 상태입니다</p></div>
+            <div class="d-item"><span class="d-icon">🏚️</span><h3>옥상 바닥이 갈라졌다</h3><p>방수층 노후화로 균열이 생겨 빗물이 침투하고 있습니다</p></div>
+            <div class="d-item"><span class="d-icon">🌊</span><h3>비만 오면 물고임</h3><p>배수 불량·방수층 파손으로 옥상에 물이 고이는 상태입니다</p></div>
+            <div class="d-item"><span class="d-icon">🧱</span><h3>외벽에 백화·균열</h3><p>외벽 방수층 손상으로 수분이 침투해 백화 현상이 생깁니다</p></div>
+            <div class="d-item"><span class="d-icon">🎨</span><h3>페인트가 들뜨거나 벗겨짐</h3><p>탄성코트 방수층 수명이 다해 재시공이 필요한 상태입니다</p></div>
+        </div>
+    </div>
+</div>
+
+<!-- 통계 -->
+<div class="stats">
+    <div class="stats-grid">
+        <div class="stat-i"><span class="stat-n">당일</span><div class="stat-l">견적 가능</div></div>
+        <div class="stat-i"><span class="stat-n">무료</span><div class="stat-l">현장 견적</div></div>
+        <div class="stat-i"><span class="stat-n">10년+</span><div class="stat-l">시공 경력</div></div>
+        <div class="stat-i"><span class="stat-n">0원</span><div class="stat-l">추가비용 없음</div></div>
+        <div class="stat-i"><span class="stat-n">전국</span><div class="stat-l">서울·인천·경기</div></div>
+    </div>
+</div>
+
+<!-- 서비스 -->
+<section class="sec" style="background:#fff" id="service">
+    <div class="sec-inner">
+        <span class="sec-eyebrow">SERVICES</span>
+        <h2 class="sec-h">전문 <span>방수 시공 항목</span></h2>
+        <p class="sec-p">모든 방수 공정 직접 시공 — 현장 진단 후 최적 공법 적용</p>
+        <div class="svc-grid">
+            <div class="svc-card"><span class="svc-icon">🏠</span><h3>옥상 방수</h3><p>우레탄·시트·도막 방수 등 옥상 특성에 맞는 최적 공법으로 누수 완벽 차단</p><span class="svc-badge">가장 인기</span></div>
+            <div class="svc-card"><span class="svc-icon">🎨</span><h3>탄성코트</h3><p>탄성력 높은 방수 도료로 균열 추종·방수 동시 해결. 옥상·외벽·베란다 적용</p><span class="svc-badge">누수해결</span></div>
+            <div class="svc-card"><span class="svc-icon">🏗️</span><h3>외벽 방수</h3><p>외벽 균열·백화·박리 부위 보수 후 방수 처리. 건물 외관 동시 개선</p><span class="svc-badge">미관개선</span></div>
+            <div class="svc-card"><span class="svc-icon">🔩</span><h3>우레탄 방수</h3><p>도막 형성으로 복잡한 형태 옥상에도 완벽 밀착. 내구성·탄성 우수</p><span class="svc-badge">내구성</span></div>
+            <div class="svc-card"><span class="svc-icon">🏢</span><h3>건물·상가 방수</h3><p>아파트·빌라·상가·공장 옥상 대면적 방수 전문 시공</p><span class="svc-badge">대형 가능</span></div>
+            <div class="svc-card"><span class="svc-icon">🛠️</span><h3>누수 탐지·보수</h3><p>누수 위치 정밀 탐지 후 원인 부위만 선택적 보수. 불필요한 전면 공사 없음</p><span class="svc-badge">부분 가능</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- 갤러리 -->
+<div class="gal-sec">
+    <div style="max-width:1050px;margin:0 auto">
+        <span class="sec-eyebrow" style="color:#fb923c">GALLERY</span>
+        <h2 class="sec-h" style="color:#fff">실제 <span style="color:#fb923c">시공 현장</span></h2>
+    </div>
+    <div class="gal-grid">
+        <div class="gal-item big"><img src="https://loremflickr.com/800/480/roof,waterproof?random=11" alt="옥상방수 시공"><div class="gal-lbl">🏠 옥상 방수 전체 시공</div></div>
+        <div class="gal-item"><img src="https://loremflickr.com/400/240/paint,coating?random=22" alt="탄성코트"><div class="gal-lbl">🎨 탄성코트 시공</div></div>
+        <div class="gal-item"><img src="https://loremflickr.com/400/240/building,repair?random=33" alt="외벽방수"><div class="gal-lbl">🏗️ 외벽 방수</div></div>
+        <div class="gal-item"><img src="https://loremflickr.com/400/240/construction,roof?random=44" alt="우레탄방수"><div class="gal-lbl">🔩 우레탄 방수</div></div>
+        <div class="gal-item"><img src="https://loremflickr.com/400/240/waterproof,building?random=55" alt="완료"><div class="gal-lbl">✅ 시공 완료</div></div>
+    </div>
+</div>
+
+<!-- 시공 전후 -->
+<section class="ba-sec">
+    <div style="max-width:1050px;margin:0 auto">
+        <span class="sec-eyebrow">BEFORE & AFTER</span>
+        <h2 class="sec-h">시공 전·후 <span>비교</span></h2>
+        <p class="sec-p">직접 촬영한 시공 전후 사진입니다</p>
+    </div>
+    <div class="ba-grid">
+        <div class="ba-item">
+            <img src="https://loremflickr.com/600/280/roof,crack?random=66" alt="시공 전">
+            <div class="ba-tag before">BEFORE</div>
+            <div class="ba-desc">균열·방수층 파손 — 빗물 침투 상태</div>
+        </div>
+        <div class="ba-item">
+            <img src="https://loremflickr.com/600/280/roof,clean?random=77" alt="시공 후">
+            <div class="ba-tag after">AFTER</div>
+            <div class="ba-desc">탄성코트 완료 — 완벽한 방수 상태</div>
+        </div>
+    </div>
+</section>
+
+<!-- 프로세스 -->
+<section class="sec" style="background:#fff">
+    <div class="sec-inner" style="text-align:center">
+        <span class="sec-eyebrow">PROCESS</span>
+        <h2 class="sec-h">시공 <span>프로세스</span></h2>
+        <p class="sec-p">전화 한 통으로 시작 — 투명하고 정직한 5단계</p>
+        <div class="proc-wrap">
+            <div class="proc-s"><div class="proc-c">1</div><h3>전화 상담</h3><p>증상·위치 간단히 말씀해 주세요</p></div>
+            <div class="proc-s"><div class="proc-c">2</div><h3>현장 방문</h3><p>무료 현장 진단·견적 제공</p></div>
+            <div class="proc-s"><div class="proc-c">3</div><h3>공법 결정</h3><p>현장에 맞는 최적 방수 공법 선택</p></div>
+            <div class="proc-s"><div class="proc-c">4</div><h3>전문 시공</h3><p>직접 시공으로 품질 보장</p></div>
+            <div class="proc-s"><div class="proc-c">5</div><h3>완료 확인</h3><p>고객 확인 후 마무리</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 신뢰 -->
+<section class="sec" style="background:#fafaf8">
+    <div class="sec-inner" style="text-align:center">
+        <span class="sec-eyebrow">WHY US</span>
+        <h2 class="sec-h">왜 <span>페인트맨114</span>인가요?</h2>
+        <div class="trust-grid">
+            <div class="trust-card"><span class="trust-icon">🔍</span><h3>정밀 현장 진단</h3><p>누수 원인을 정확히 파악 후 최적 공법을 적용합니다. 불필요한 공사 없습니다.</p></div>
+            <div class="trust-card"><span class="trust-icon">💰</span><h3>투명한 견적</h3><p>시공 전 비용 확정. 현장에서 추가 청구 없이 처음 말씀드린 금액 그대로입니다.</p></div>
+            <div class="trust-card"><span class="trust-icon">🏆</span><h3>직접 시공</h3><p>하청 없이 페인트맨114 전문 시공팀이 직접 진행합니다. 책임 시공 보장.</p></div>
+            <div class="trust-card"><span class="trust-icon">🛡️</span><h3>사후 관리</h3><p>시공 후 문제 발생 시 즉시 대응합니다. 시공 결과에 책임집니다.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- 지역 -->
+<section class="sec" style="background:#fff">
+    <div class="sec-inner" style="text-align:center">
+        <span class="sec-eyebrow">SERVICE AREA</span>
+        <h2 class="sec-h">출동 <span>가능 지역</span></h2>
+        <p class="sec-p">서울·인천·경기 전 지역 출동 가능</p>
+        <div class="area-grid">
+            <div class="area-card"><h3>서울</h3><p>강남 서초 송파 강동 강서 마포 종로 중구 용산 성동 광진 동대문 성북 강북 노원 은평 양천 구로 영등포 동작 관악</p></div>
+            <div class="area-card"><h3>경기</h3><p>수원 성남 분당 용인 안양 부천 광명 평택 안산 고양 일산 의정부 파주 김포 하남 남양주 구리 광주 이천 양평</p></div>
+            <div class="area-card"><h3>인천</h3><p>중구 동구 미추홀 연수 남동 부평 계양 서구 강화 송도 청라 검단</p></div>
+            <div class="area-card"><h3>전국</h3><p>위 지역 외에도 규모에 따라 전국 출동 가능합니다. 먼저 전화 주시면 확인 후 안내드립니다.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+    <div class="cta-inner">
+        <h2>누수 고민 중이시라면<br><span>지금 바로 전화하세요</span></h2>
+        <p>현장 사진 한 장만 보내주셔도 대략적인 견적 안내 가능합니다<br>페인트맨114가 빠르고 정직하게 해결해드립니다</p>
+        <a href="tel:0504-1362-7837" class="cta-btn">🎨 0504-1362-7837 무료견적</a>
+        <p style="margin-top:20px;font-size:.88em;color:rgba(255,255,255,.4)">무료 현장 견적 · 서울 인천 경기 전국 · 추가비용 없음</p>
+    </div>
+</section>
+
+<footer>
+    <p>페인트맨114 옥상방수·탄성코트 전문 · 서울 인천 경기 전국</p>
+    <p style="margin-top:8px">무료 견적 문의: <span>0504-1362-7837</span></p>
+</footer>
+
+<script>
+// 빗방울 효과
+const rain = document.getElementById('rain');
+for(let i=0; i<25; i++){
+    const d = document.createElement('div');
+    d.className = 'drop';
+    const h = 40 + Math.random()*80;
+    d.style.cssText = `
+        left:${Math.random()*100}%;
+        height:${h}px;
+        animation-duration:${0.8+Math.random()*1.5}s;
+        animation-delay:${Math.random()*3}s;
+        opacity:${0.1+Math.random()*0.2};
+        width:${1+Math.random()}px;
+    `;
+    rain.appendChild(d);
+}
+</script>
+</body>
+</html>
